@@ -1,0 +1,135 @@
+/* styles.css */
+/* Reset default margin and padding */
+body, h1, h2, h3, p, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+/* Global styles */
+body {
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Header */
+.header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+}
+
+.header .logo-img {
+    width: 150px;
+}
+
+.header .logo-heading {
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+.header .navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header .menu {
+    display: none;
+}
+
+.header .hamburger {
+    display: block;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+/* Navigation */
+.menu-list {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu-list-items {
+    padding: 0 10px;
+}
+
+.menu-list-items a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
+}
+
+/* Hero Section */
+.hero {
+    background-color: #f2f2f2;
+    padding: 50px 0;
+    text-align: center;
+}
+
+/* Footer */
+.footer {
+    background-color: #333;
+    color: #fff;
+    padding: 30px 0;
+}
+
+.footer .contact-heading {
+    margin-bottom: 20px;
+}
+
+.footer .contact-content {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.footer .contact-details {
+    margin-left: 40px;
+}
+
+.footer .contact-details h5 {
+    margin-bottom: 10px;
+}
+
+/* Media queries for responsiveness */
+@media only screen and (max-width: 768px) {
+    .header .menu {
+        display: block;
+    }
+
+    .header .menu-list {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: #333;
+        position: absolute;
+        top: 80px;
+        left: 0;
+        width: 100%;
+        padding: 10px 0;
+    }
+
+    .header .menu-list-items {
+        padding: 10px 0;
+    }
+
+    .header .menu-list-items a {
+        font-size: 16px;
+    }
+
+    .header .hamburger .hamburger-icon {
+        display: none;
+    }
+
+    .header .hamburger .cross-icon {
+        display: block;
+    }
+}

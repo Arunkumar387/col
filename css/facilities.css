@@ -1,0 +1,169 @@
+body {
+    background-color: rgba(240, 255, 255, 0.336);
+}
+.menu { 
+	padding: 0; 
+	margin-left: 6%;
+} 
+
+.main-content {
+    display: block;
+}
+h3,h4 {
+    display: block;
+    padding-top: 3%;
+    margin: 0;
+}
+.fac-details h2 {
+    text-align: center;
+    color :rgb(9, 119, 27);
+}
+.fac-content {
+    margin-top : 5%;
+}
+.fac-types {
+    background-color: #98f3f3;
+    padding-right: 5%;
+    margin: 2%;
+    margin-left: 0; 
+    margin-right: 0;
+    border: 2px solid;
+    width: 94.5%;
+}
+.fac-types ul {
+    display: inline;
+    margin-left: 7%;
+}
+.fac-types li {
+    display: inline-block;
+    list-style: none;
+    width: 10%;
+    padding: 1%;
+}
+.fac-types li a {
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    text-decoration: none;
+} 
+.fac-details {
+    float: left;
+    background-color: #98f3f3;
+    padding: 3%;
+    margin: 2%;
+    margin-top: 5%;
+    margin-left: 1%;
+    border: 2px solid;
+    height: 100%;
+    width: 90%;
+}
+.hod-head {
+    text-align: center;
+    color: blueviolet;
+}
+.hod-info{
+    text-align: center;
+    border: 1px solid black;
+    width: fit-content;
+    margin-left: 38%;
+    padding: 3%;
+    padding-left: 0;
+    padding-right: 0;
+
+}
+
+.facilities-para {
+    display: inline;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.classrooms-para {
+    font-size: larger;
+}
+#classroom-para {
+    display: none;
+}
+#lab-para {
+    text-align: center;
+}
+
+.my-col img {
+    height : 300px ;
+    width : 300px ;
+}
+.my-col h3 {
+    color : white;
+}
+
+.info {
+    border: 2px;
+}
+
+.library-heading {
+    display: block;
+}
+
+
+@media screen and (min-width: 280px) and (max-width: 576px) {
+
+.top-header a {
+    display: none;
+}
+
+.top-header .con{
+    display: none;
+}
+
+
+.logo { 
+    padding: 0;
+    padding-left: 2px;
+    margin-top: 2%;
+} 
+
+.menu{
+    
+    position: absolute; 
+    right: 0; 
+    padding: 0 2rem; 
+    top: 120px; 
+    background-image: linear-gradient(180deg, #35A99C, #53C8B6, #74D7BB); 
+    display: none; 
+    transition: all 0.25s; 
+}
+.menu .menu-list { 
+    flex-direction: column; 
+} 
+
+.hamburger { 
+    display: block; 
+    padding: 0 1rem; 
+} 
+.heading { 
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: center; 
+/*	margin: 2rem 0;
+    gap: 1rem; */
+} 
+.fac-types {
+    margin-top: 2px;
+}
+.fac-types ul {
+    display: flex;
+    justify-content: space-between;
+    margin:0;
+    padding: 0;
+}
+.fac-types li {
+    padding : 4px;
+    width: max-content;
+}
+
+.fac-types li a{
+    font-size: small;
+}
+
+.my-row .my-col {
+    text-align: center;
+    width: max-content;
+}
+}
